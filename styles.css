@@ -130,14 +130,13 @@ img { max-width: 100%; display: block; }
   position: fixed;
   top: 0; left: 0; width: 100%;
   z-index: 100;
-  height: var(--nav-h);
   padding: 0 clamp(1rem, 4vw, 2rem);
   background: rgba(11,12,16,.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   display: flex;
-  align-items: center;
+  flex-direction: column; /* allows mobile-menu to sit below nav-inner */
 }
 .nav-inner {
   max-width: 1200px;
@@ -146,6 +145,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 2rem;
+  height: var(--nav-h); /* keep nav bar height consistent */
 }
 .nav-links { display: flex; align-items: center; gap: .25rem; margin-left: auto; }
 .nav-links a {
