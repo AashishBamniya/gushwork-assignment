@@ -45,6 +45,26 @@ mobileMenu.querySelectorAll('a').forEach(function (link) {
   });
 });
 
+// Main nav hamburger (always visible nav bar)
+var hamburger2  = document.getElementById('hamburger2');
+var mobileMenu2 = document.getElementById('mobileMenu2');
+
+hamburger2.addEventListener('click', function () {
+  var isOpen = hamburger2.classList.toggle('open');
+  mobileMenu2.classList.toggle('open', isOpen);
+  hamburger2.setAttribute('aria-expanded', isOpen);
+  mobileMenu2.setAttribute('aria-hidden', !isOpen);
+});
+
+mobileMenu2.querySelectorAll('a').forEach(function (link) {
+  link.addEventListener('click', function () {
+    hamburger2.classList.remove('open');
+    mobileMenu2.classList.remove('open');
+    hamburger2.setAttribute('aria-expanded', 'false');
+    mobileMenu2.setAttribute('aria-hidden', 'true');
+  });
+});
+
 
 // ─── 3. Carousel ────────────────────────────────────────────────
 // Slide track by translating it on X axis
