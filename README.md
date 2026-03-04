@@ -2,7 +2,6 @@
 
 Responsive landing page with HTML, CSS & JavaScript.
 
-🔗 **Live:** https://aashishbamniya.github.io/gushwork-assignment
 
 ---
 
