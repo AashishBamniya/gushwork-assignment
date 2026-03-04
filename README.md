@@ -1,19 +1,21 @@
 # Gushwork — Web Developer Assignment
 
-Responsive landing page with HTML, CSS & JavaScript.
+A responsive landing page built with HTML, CSS, and JavaScript.
 
+**🔗 Live Demo:** https://aashishbamniya.github.io/gushwork-assignment  
+**📂 GitHub Repository:** https://github.com/AashishBamniya/gushwork-assignment
 
 ---
 
 ## ✅ Features
-- Sticky header (shows on scroll up)
-- Image carousel with hover zoom
-- Mobile hamburger menu
-- Fully responsive
+- Sticky header (appears on scroll up, hides on scroll down)
+- Image carousel with hover zoom effect
+- Mobile-friendly hamburger menu
+- Fully responsive design (desktop, tablet, mobile)
 
 ---
 
-## 📁 Files
+## 📁 Project Files
 ```
 index.html
 styles.css
@@ -23,14 +25,14 @@ README.md
 
 ---
 
-## 🚀 Run with Live Server
+## 🚀 How to Run Locally
 
-### VS Code me:
-1. **Install Live Server** 
-2. `index.html` on **right click** 
-3. **"Open with Live Server"** 
+### Using VS Code Live Server:
+1. Install **Live Server** extension
+2. Right-click on `index.html`
+3. Select **"Open with Live Server"**
 
-Ya fir:
+### Or directly:
 ```bash
 start index.html  # Windows
 open index.html   # Mac
@@ -38,7 +40,7 @@ open index.html   # Mac
 
 ---
 
-## 👤 Ashish Bamniya
+## 👤 Author
+**Ashish Bamniya**
 
 ---
-
