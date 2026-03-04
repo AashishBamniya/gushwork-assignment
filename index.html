@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gushwork — hire pre-vetted freelancers in 48 hours." />
+  <title>Gushwork — Find Vetted Freelancers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Sticky header — hidden by default, JS shows it after hero scroll -->
+  <header class="sticky-header" id="stickyHeader">
+    <div class="sticky-inner">
+      <a href="#" class="logo"><span class="logo-box">G</span>Gushwork</a>
+      <nav class="sticky-nav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#talent">Talent</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#work">Work</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-ghost">Log in</a>
+        <a href="#" class="btn btn-primary">Get started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#how-it-works">How it works</a>
+      <a href="#talent">Talent</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#work">Work</a>
+      <a href="#" class="btn btn-primary">Get started</a>
+    </div>
+  </header>
+
+  <!-- Main nav — always visible at top of page -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="#" class="logo"><span class="logo-box">G</span>Gushwork</a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#talent">Talent</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#work">Work</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-ghost">Log in</a>
+        <a href="#" class="btn btn-primary">Get started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero" id="hero">
+    <div class="hero-blob blob-1" aria-hidden="true"></div>
+    <div class="hero-blob blob-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        Trusted by 2,000+ companies worldwide
+      </div>
+      <h1>Hire vetted<br /><span class="accent">freelancers</span><br />in 48 hours.</h1>
+      <p class="hero-sub">Gushwork matches you with pre-screened, top-tier talent across design, development, and strategy — so you can ship faster, not slower.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary btn-lg">Start hiring free</a>
+        <a href="#how-it-works" class="btn btn-outline btn-lg">
+          <span class="play" aria-hidden="true">&#9654;</span> See how it works
+        </a>
+      </div>
+      <div class="social-proof">
+        <div class="avatars" aria-hidden="true">
+          <div class="av" style="background:#f4a261">A</div>
+          <div class="av" style="background:#e76f51">B</div>
+          <div class="av" style="background:#2a9d8f">C</div>
+          <div class="av" style="background:#457b9d">D</div>
+          <div class="av" style="background:#6d6875">E</div>
+        </div>
+        <p><strong>4.9/5</strong> from over 800 reviews</p>
+      </div>
+    </div>
+
+    <!-- Decorative freelancer cards (visual only) -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="fcard fcard-top">
+        <div class="fav" style="background:linear-gradient(135deg,#f4a261,#e76f51)">S</div>
+        <div><p class="fname">Sara Chen</p><p class="frole">Senior UI Designer</p></div>
+        <span class="fbadge green">Available</span>
+      </div>
+      <div class="fcard fcard-mid">
+        <div class="fav" style="background:linear-gradient(135deg,#2a9d8f,#264653)">M</div>
+        <div><p class="fname">Marcus Liu</p><p class="frole">Full-Stack Engineer</p></div>
+        <span class="fbadge grey">Booked</span>
+      </div>
+      <div class="fcard fcard-bot">
+        <div class="fav" style="background:linear-gradient(135deg,#6d6875,#c77dff)">P</div>
+        <div><p class="fname">Priya Nair</p><p class="frole">Brand Strategist</p></div>
+        <span class="fbadge green">Available</span>
+      </div>
+      <div class="chip chip-1">⚡ 48hr match</div>
+      <div class="chip chip-2">✓ Pre-vetted</div>
+    </div>
+  </section>
+
+  <!-- Trusted companies bar -->
+  <section class="trust-bar">
+    <div class="trust-inner">
+      <p class="trust-label">Trusted by teams at</p>
+      <div class="trust-logos">
+        <span>Notion</span><span>Linear</span><span>Vercel</span>
+        <span>Loom</span><span>Figma</span><span>Stripe</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <p class="label">Process</p>
+        <h2>From request to ready<br />in three steps.</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="step-num" aria-hidden="true">01</div>
+          <h3>Tell us what you need</h3>
+          <p>Share your project scope, timeline, and required skills. Our matching engine takes it from there.</p>
+        </article>
+        <article class="card reveal">
+          <div class="step-num" aria-hidden="true">02</div>
+          <h3>Meet vetted candidates</h3>
+          <p>Within 48 hours, receive a curated shortlist of pre-screened freelancers — no cold outreach needed.</p>
+        </article>
+        <article class="card reveal">
+          <div class="step-num" aria-hidden="true">03</div>
+          <h3>Hire &amp; get to work</h3>
+          <p>Approve your favourite, sign digitally, and kick off your project — all inside one dashboard.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio carousel with zoom preview -->
+  <section class="section bg-surface" id="work">
+    <div class="container">
+      <div class="section-head">
+        <p class="label">Portfolio</p>
+        <h2>Work that speaks<br />for itself.</h2>
+        <p class="section-sub">Hover any card to see a zoomed preview.</p>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <div class="c-track" id="cTrack">
+
+          <!-- Card 1 -->
+          <div class="c-item" tabindex="0" aria-label="Project: Dashboard Redesign">
+            <div class="c-img-wrap">
+              <div class="c-img" style="background:linear-gradient(135deg,#1a1a2e,#0f3460)">
+                <div class="mock-dashboard" aria-hidden="true">
+                  <div class="m-bar"></div>
+                  <div class="m-side"></div>
+                  <div class="m-body">
+                    <div class="m-chart"></div>
+                    <div class="m-cards">
+                      <div class="mc mc1"></div><div class="mc mc2"></div><div class="mc mc3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Hover overlay icon -->
+              <div class="zoom-overlay" aria-hidden="true">
+                <div class="zoom-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+              <!-- Zoom template — hidden, cloned into portal by JS on hover -->
+              <div class="zoom-tpl" aria-hidden="true">
+                <div class="zt-img" style="background:linear-gradient(135deg,#1a1a2e,#0f3460)">
+                  <div class="mock-dashboard" aria-hidden="true">
+                    <div class="m-bar"></div><div class="m-side"></div>
+                    <div class="m-body"><div class="m-chart"></div>
+                      <div class="m-cards"><div class="mc mc1"></div><div class="mc mc2"></div><div class="mc mc3"></div></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="zt-title">Dashboard Redesign</p>
+                <p class="zt-sub">Analytics SaaS · UI Design</p>
+              </div>
+            </div>
+            <p class="c-name">Dashboard Redesign</p>
+            <p class="c-sub">Analytics SaaS · UI Design</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="c-item" tabindex="0" aria-label="Project: Brand Identity System">
+            <div class="c-img-wrap">
+              <div class="c-img" style="background:linear-gradient(135deg,#f8edeb,#ffb5a7)">
+                <div class="mock-brand" aria-hidden="true">
+                  <div class="br-circle c1"></div><div class="br-circle c2"></div>
+                  <div class="br-word">brand.</div>
+                </div>
+              </div>
+              <div class="zoom-overlay" aria-hidden="true">
+                <div class="zoom-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+              <div class="zoom-tpl" aria-hidden="true">
+                <div class="zt-img" style="background:linear-gradient(135deg,#f8edeb,#ffb5a7)">
+                  <div class="mock-brand" aria-hidden="true">
+                    <div class="br-circle c1"></div><div class="br-circle c2"></div>
+                    <div class="br-word">brand.</div>
+                  </div>
+                </div>
+                <p class="zt-title">Brand Identity System</p>
+                <p class="zt-sub">DTC Startup · Branding</p>
+              </div>
+            </div>
+            <p class="c-name">Brand Identity System</p>
+            <p class="c-sub">DTC Startup · Branding</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="c-item" tabindex="0" aria-label="Project: E-Commerce App">
+            <div class="c-img-wrap">
+              <div class="c-img" style="background:linear-gradient(135deg,#2d6a4f,#74c69d)">
+                <div class="mock-ecom" aria-hidden="true">
+                  <div class="ec-phone">
+                    <div class="ec-img"></div><div class="ec-title"></div>
+                    <div class="ec-price"></div><div class="ec-btn"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="zoom-overlay" aria-hidden="true">
+                <div class="zoom-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+              <div class="zoom-tpl" aria-hidden="true">
+                <div class="zt-img" style="background:linear-gradient(135deg,#2d6a4f,#74c69d)">
+                  <div class="mock-ecom" aria-hidden="true">
+                    <div class="ec-phone">
+                      <div class="ec-img"></div><div class="ec-title"></div>
+                      <div class="ec-price"></div><div class="ec-btn"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="zt-title">E-Commerce App</p>
+                <p class="zt-sub">Fashion Brand · Mobile Dev</p>
+              </div>
+            </div>
+            <p class="c-name">E-Commerce App</p>
+            <p class="c-sub">Fashion Brand · Mobile Dev</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="c-item" tabindex="0" aria-label="Project: Motion Design System">
+            <div class="c-img-wrap">
+              <div class="c-img" style="background:linear-gradient(135deg,#3a0ca3,#f72585)">
+                <div class="mock-motion" aria-hidden="true">
+                  <div class="ring r1"></div><div class="ring r2"></div>
+                  <div class="ring r3"></div><div class="dot"></div>
+                </div>
+              </div>
+              <div class="zoom-overlay" aria-hidden="true">
+                <div class="zoom-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+              <div class="zoom-tpl" aria-hidden="true">
+                <div class="zt-img" style="background:linear-gradient(135deg,#3a0ca3,#f72585)">
+                  <div class="mock-motion" aria-hidden="true">
+                    <div class="ring r1"></div><div class="ring r2"></div>
+                    <div class="ring r3"></div><div class="dot"></div>
+                  </div>
+                </div>
+                <p class="zt-title">Motion Design System</p>
+                <p class="zt-sub">Fintech App · Animation</p>
+              </div>
+            </div>
+            <p class="c-name">Motion Design System</p>
+            <p class="c-sub">Fintech App · Animation</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="c-item" tabindex="0" aria-label="Project: Developer Platform Docs">
+            <div class="c-img-wrap">
+              <div class="c-img" style="background:linear-gradient(135deg,#212529,#495057)">
+                <div class="mock-docs" aria-hidden="true">
+                  <div class="d-bar"></div>
+                  <div class="d-side">
+                    <div class="d-link"></div><div class="d-link active"></div>
+                    <div class="d-link"></div><div class="d-link"></div>
+                  </div>
+                  <div class="d-body">
+                    <div class="d-h1"></div><div class="d-p"></div><div class="d-code"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="zoom-overlay" aria-hidden="true">
+                <div class="zoom-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+              <div class="zoom-tpl" aria-hidden="true">
+                <div class="zt-img" style="background:linear-gradient(135deg,#212529,#495057)">
+                  <div class="mock-docs" aria-hidden="true">
+                    <div class="d-bar"></div>
+                    <div class="d-side">
+                      <div class="d-link"></div><div class="d-link active"></div>
+                      <div class="d-link"></div><div class="d-link"></div>
+                    </div>
+                    <div class="d-body">
+                      <div class="d-h1"></div><div class="d-p"></div><div class="d-code"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="zt-title">Developer Platform Docs</p>
+                <p class="zt-sub">Dev Tools · Technical Writing</p>
+              </div>
+            </div>
+            <p class="c-name">Developer Platform Docs</p>
+            <p class="c-sub">Dev Tools · Technical Writing</p>
+          </div>
+
+        </div><!-- end track -->
+
+        <!-- Prev / dots / next -->
+        <div class="c-controls">
+          <button class="c-btn" id="prevBtn" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="c-dots" id="cDots" role="tablist"></div>
+          <button class="c-btn" id="nextBtn" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talent -->
+  <section class="section" id="talent">
+    <div class="container">
+      <div class="section-head">
+        <p class="label">Talent</p>
+        <h2>The top 3% only.</h2>
+        <p class="section-sub">Every freelancer passes a 4-stage vetting process before appearing in your results.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="t-av" style="background:linear-gradient(135deg,#f4a261,#e76f51)" aria-hidden="true">R</div>
+          <div><h3>Riya Sharma</h3><p class="muted">Product Designer · 6 yrs</p></div>
+          <div class="tags"><span>Figma</span><span>UX Research</span><span>Prototyping</span></div>
+          <p class="rating">⭐ 4.97 · 42 projects</p>
+        </article>
+        <article class="card card-featured reveal">
+          <div class="t-av" style="background:linear-gradient(135deg,#3a0ca3,#7209b7)" aria-hidden="true">J</div>
+          <div><h3>James Okonkwo</h3><p class="muted">Frontend Engineer · 8 yrs</p></div>
+          <div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span></div>
+          <p class="rating">⭐ 4.99 · 67 projects</p>
+        </article>
+        <article class="card reveal">
+          <div class="t-av" style="background:linear-gradient(135deg,#2a9d8f,#264653)" aria-hidden="true">L</div>
+          <div><h3>Lena Müller</h3><p class="muted">Brand Strategist · 5 yrs</p></div>
+          <div class="tags"><span>Brand Identity</span><span>Copywriting</span></div>
+          <p class="rating">⭐ 4.95 · 29 projects</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section bg-surface" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <p class="label">Pricing</p>
+        <h2>Simple, honest pricing.</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <p class="plan-name">Starter</p>
+          <p class="plan-price">Free</p>
+          <p class="muted">Perfect for trying out the platform.</p>
+          <ul class="features">
+            <li>Up to 3 freelancer matches</li>
+            <li>Basic project dashboard</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Get started</a>
+        </article>
+        <article class="card card-featured reveal">
+          <span class="popular">Most popular</span>
+          <p class="plan-name">Growth</p>
+          <p class="plan-price">$49<span class="plan-per">/mo</span></p>
+          <p class="muted">For teams that hire regularly.</p>
+          <ul class="features">
+            <li>Unlimited matches</li>
+            <li>Advanced filters &amp; vetting reports</li>
+            <li>Dedicated account manager</li>
+            <li>Priority 24hr support</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full">Start free trial</a>
+        </article>
+        <article class="card reveal">
+          <p class="plan-name">Enterprise</p>
+          <p class="plan-price">Custom</p>
+          <p class="muted">For large teams and agencies.</p>
+          <ul class="features">
+            <li>Everything in Growth</li>
+            <li>Custom SLAs &amp; contracts</li>
+            <li>Dedicated talent pool</li>
+            <li>White-glove onboarding</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Contact us</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Ready to hire smarter?</h2>
+      <p>Join 2,000+ companies building with the world's best freelancers.</p>
+      <a href="#" class="btn btn-primary btn-lg">Start hiring free →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="logo-box">G</span>Gushwork</a>
+        <p>Connecting the world's best talent with companies that need them.</p>
+      </div>
+      <nav class="footer-links">
+        <div>
+          <p class="footer-title">Product</p>
+          <a href="#">How it works</a>
+          <a href="#">Talent</a>
+          <a href="#">Pricing</a>
+        </div>
+        <div>
+          <p class="footer-title">Company</p>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <p class="footer-title">Legal</p>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2025 Gushwork. All rights reserved.</p>
+  </footer>
+
+  <!-- Zoom portal — position:fixed at body level so it is never clipped by overflow:hidden -->
+  <div id="zoomPortal" class="zoom-portal" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
